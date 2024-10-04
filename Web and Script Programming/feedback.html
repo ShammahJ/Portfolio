@@ -1,0 +1,65 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Form</title> 
+        <link href="style.css" rel="stylesheet" type="text/css"> 
+    </head> 
+    <body> 
+        <div id="wrapper"> 
+            <h1>Feedback . . . Stay in Touch</h1> 
+            <form action="mailto:ahmed.sheikh@ontariotechu.net" ?subject="SignUp" enctype="text/plain" method="post" name="Form">
+            <p>
+                <label for="name">Name : </label>
+                <input type="text" name="name" size="40" placeholder="Enter you complete name here" required>
+            </p>
+            <p>
+                <label for="email">Email : </label>
+                <input type="email" name="email" size="30" placeholder="Enter you email here" required>
+            </p>
+            <p>
+                <label for="feedback">Comments : </label><br>
+                <textarea name="feedback" cols="60" rows="8"></textarea>
+            </p>
+
+            <p> 
+                <input type="checkbox" name="maillist"> 
+                <label for="maillist">Put me on your e-list!</label> 
+            </p>
+            <p> 
+                <label for="where">How did you find us?</label> 
+                <select name="where"> 
+                    <option value="Search engine">Search engine</option> 
+                    <option value="Word of mouth">Word of mouth</option> 
+                    <option value="Craigslist">Craigslist</option> 
+                    <option value="Other">Other</option> 
+                </select> 
+            </p>
+            <p>
+                <label for="countries">Where do you live?</label> 
+                <input list="countries"> 
+                <datalist id="countries"> 
+                    <option value="Afghanistan"> 
+                    <option value="Albania"> 
+                    <option value="Algeria"> 
+                    <option value="Andorra"> 
+                    <option value="Angola">
+                    <option value="Antigua and Barbuda">
+                    <option value="Argentina"> 
+                    <option value="Armenia"> 
+                    <option value="Aruba"> 
+                    <option value="Australia"> 
+                    <option value="Austria"> 
+                    <option value="Azerbaijan"> 
+                </datalist>
+                <br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit"/>
+            </form>
+            <h3>Captcha </h3>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)"> 
+                <input type="number" id="a"> * <input type="number" id="b">= <output name="x" for="a b"></output>
+            </form>
+        </div> 
+</body> 
+</html>
