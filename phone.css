@@ -1,0 +1,35 @@
+/* Base styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    padding: 10px; /* Padding around container */
+}
+
+.item {
+    flex: 1 1 200px; /* Flexible item sizes */
+    margin: 10px; /* Space between items */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Styles specific to phones */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 5px; /* Less padding for mobile */
+    }
+
+    .item {
+        flex-basis: 100%; /* Full width for each item */
+        margin: 5px 0; /* Space between stacked items */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
